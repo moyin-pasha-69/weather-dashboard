@@ -1,7 +1,7 @@
 # 🌦️ Weather Dashboard
 
 <p align="center">
-  <img src="./assets/favicon/favicon.ico" alt="Weather Dashboard Logo" width="90">
+  <img src="./assets/favicon/favicon.png" alt="Weather Dashboard Logo" width="90">
 </p>
 
 <p align="center">
@@ -45,7 +45,7 @@
 
 # 🚀 Live Link
 
-> 
+> https://moyin-pasha-69.github.io/weather-dashboard/
 
 ---
 
@@ -97,7 +97,6 @@ weather-dashboard/
 ├── index.html
 ├── README.md
 ├── LICENSE
-└── .gitignore
 ```
 
 ---
