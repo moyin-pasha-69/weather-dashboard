@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer components {
+  .effect-custom {
+    @apply hover:bg-white/20 hover:transition-all hover:-translate-y-1 hover:duration-300 hover:cursor-pointer;
+  }
+
+  .clearSky {
+    @apply bg-linear-to-r from-[#62cff4] to-[#2c67f2];
+  }
+
+  .rainy {
+    @apply bg-linear-to-r from-[#4B79A1] to-[#283E51];
+  }
+
+  .cloudBg {
+    @apply bg-linear-to-r from-[#9db6c7] to-[#2e4d69];
+  }
+
+  .nightBg {
+    @apply bg-linear-to-r from-[#141E30] to-[#243B55];
+  }
+  .center-box {
+    @apply flex flex-col justify-center items-center;
+  }
+  .secondary-carts-boxes {
+    @apply grid grid-cols-2 md:grid-cols-4 gap-4 w-full;
+  }
+
+  .noneBg {
+    @apply bg-sky-300;
+  }
+
+  .fog {
+    @apply bg-linear-to-r from-[#B993D6] to-[#8CA6DB];
+  }
+
+  .defaultBg {
+    @apply bg-gray-800;
+  }
+}

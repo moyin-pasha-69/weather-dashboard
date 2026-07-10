@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>weather Dashboard</title>
+    <link rel="stylesheet" href="./src/output.css" />
+    <link rel="stylesheet" href="./src/style.css" />
+    <link
+      rel="shortcut icon"
+      href="./assets/favicon/favicon.png"
+      type="image/x-icon"
+    />
+    <script
+      src="https://kit.fontawesome.com/cccffbd662.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body id="bg-color" class="bg-gray-800">
+    <div
+      class="mainContainer flex justify-center items-center w-full h-full px-4"
+    >
+      <div
+        class="subContainer max-w-4xl w-full mx-auto bg-transparent backdrop-blur-xl rounded-3xl border border-white/20 p-4 mt-8 flex justify-center items-center flex-col gap-8 shadow-[inset_0px_0px_2px_white] mb-4 h-full"
+      >
+        <!-- search Bar section starts here-->
+        <header
+          class="flex justify-center items-center max-w-xl mx-auto w-full"
+        >
+          <form
+            class="bg-gray-900/80 border backdrop-blur-xl border-white/20 flex justify-between items-center p-3 rounded-3xl w-full"
+            id="form"
+          >
+            <div class="flex justify-center items-center gap-4 w-full">
+              <label for="input-field">
+                <i
+                  class="fa-brands fa-sistrix text-white text-2xl hover:text-blue-500 cursor-pointer"
+                ></i
+              ></label>
+              <input
+                type="text "
+                placeholder="Enter City..."
+                class="text-white w-full placeholder:text-gray-400 placeholder:bg-transparent bg-transparent border-none outline-none"
+                id="input-field"
+                name="input-field"
+              />
+            </div>
+
+            <button
+              class="ml-2 bg-blue-500 rounded-md px-2 py-1 text-white font-bold hover:bg-blue-500/80 active:shadow-[inset_0px_0px_2px_white]"
+              id="submit-btn"
+            >
+              Search
+            </button>
+          </form>
+        </header>
+        <!-- search bar section ends  here -->
+
+        <main class="flex-col justify-center items-center gap-8 w-full flex">
+          <!-- main cast start -->
+          <section
+            class="bg-transparent max-w-2xl mx-auto w-full flex flex-col justify-center items-center text-center"
+            id="show-main-data"
+          ></section>
+          <!-- main cast ends -->
+
+          <!-- secondary cast starts -->
+          <section id="show-sec-data" class="w-full"></section>
+          <!-- secondary cast ends -->
+
+          <!-- showing wrong city input starts -->
+          <section
+            class="w-full h-full flex justify-center items-center"
+            id="error-message-box"
+          >
+            <div class="hidden" id="empty-error-msg">
+              <p class="text-red-500 font-bold text-lg">
+                Please enter a city name.
+              </p>
+            </div>
+
+            <div class="hidden" id="wrong-city-msg">
+              <p class="text-red-500 font-bold text-lg">
+                City not found!,try again.
+              </p>
+            </div>
+          </section>
+
+          <section id="loading" class="hidden">
+            <div
+              class="justify-center items-center flex-col gap-4 text-center flex"
+            >
+              <div
+                class="w-36 h-36 rounded-full border-8 border-black/40 border-t-blue-500 animate-spin"
+                id="load"
+              ></div>
+              <p class="text-lg text-blue-500/40 animate-pulse">
+                Fetching Data...
+              </p>
+            </div>
+          </section>
+        </main>
+      </div>
+    </div>
+
+    <script src="./scripts/script.js"></script>
+  </body>
+</html>

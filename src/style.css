@@ -1,0 +1,19 @@
+.thunderstormGradient {
+  background: linear-gradient(to bottom, #2d3656, #273440, #16171c);
+  /* Optional: a subtle ambient glow from the sky */
+  background: linear-gradient(to bottom, #30639c, #2d3656, #16171c);
+}
+
+.snowWeatherBg {
+  background: #e6dada;
+  background: linear-gradient(to right, #e6dada, #274046);
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-box-shadow: 0 0 0 1000px transparent inset;
+  -webkit-text-fill-color: white;
+  transition: background-color 9999s ease-in-out 0s;
+}
